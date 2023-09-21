@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JavaScript Animation</title>
+    <meta charset="utf-8"/>
+    
+  </head>
+  <body onload="initialize();">
+    <h2>Fun with Soccer Balls</h2>
+      <form>
+        <label>Slow<input type="radio" name="speed" value="0" checked="checked" onclick="setSpeed(0);"/></label>
+        <label>Medium<input type="radio" name="speed" value="1" onclick="setSpeed(1);"/></label>
+        <label>Fast<input type="radio" name="speed" value="2" onclick="setSpeed(2);"/></label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for = "ballNums">Number of Balls: <select id="ballNums" onchange="setBallNum();">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select></label>
+      </form>
+      <br/>
+      <div id="court" style="border: solid black; background-color: azure; width: 1000px; height: 600px;"
+           onclick="resumeOrSuspend(event);"/>
+        <img id = "ball" src="C:\Users\kalva\Downloads\project1\project1\soccer-ball.gif" height="40px" width = "40px" alt="Soccer ball animated GIF"
+             style="margin: 0px; padding: 0px; position: relative; top: 0px; bottom: 0px; left: 0px; right: 0px;"/>
+      </div>
+    <br/>
+    Messages: <span id="message"></span>
+    <script type="text/javascript" src="C:\Users\kalva\Downloads\project1\project1\soccer.js"></script>
+  </body>
+</html>
